@@ -15,7 +15,7 @@ const uri = process.env.MONGO_URI
 // Middleware
 app.use(cors({ origin: "*" }));
 app.use(express.json()); // Parse JSON requests
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
 
 
