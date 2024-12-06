@@ -115,27 +115,6 @@
   <h2 class="me">View Tasks</h2>
   <div id="tasksContainer">Loading tasks...</div>
 
-  <!-- <div id="updateModal">
-    <div class="modal-content">
-      <h3>Update Task</h3>
-      <form id="updateForm">
-        <input type="text" id="updateTitle" placeholder="Title" required />
-        <input type="text" id="updateDescription" placeholder="Description" required />
-        <input type="date" id="updateDeadline" required />
-        <select id="updatePriority" required>
-          <option value="High">High</option>
-          <option value="Medium">Medium</option>
-          <option value="Low">Low</option>
-        </select>
-        <button 
-        onclick="closeUpdateTaskModal()"style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 18px; cursor: pointer; color: #333;">
-        &times;
-    </button>
-        <button type="submit">Save Changes</button>
-        <button type="button" onclick="closeUpdateModal()">Cancel</button>
-      </form>
-    </div>
-  </div> -->
 
   <div id="updateModal">
     <div class="modal-content">
@@ -168,7 +147,7 @@
   // Open the update modal and populate fields
   window.openUpdateTaskModal = async (title) => {
     try {
-      const response = await fetch(`https://taskmanager-it91.onrender.com/tasks/title/${title}`);
+      const response = await fetch(`https://taskmanager-72as.onrender.com/tasks/title/${title}`);
       const task = await response.json();
 
       if (response.status !== 200) {
@@ -226,7 +205,7 @@
     };
 
     try {
-      const response = await fetch(`https://taskmanager-it91.onrender.com/tasks/${currentTaskId}`, {
+      const response = await fetch(`https://taskmanager-72as.onrender.com/tasks/${currentTaskId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -297,7 +276,7 @@ window.deleteTask = async (taskId) => {
 
             try {
                 // Send DELETE request to the server
-                const response = await fetch(`https://taskmanager-it91.onrender.com/tasks/${taskId}`, {
+                const response = await fetch(`https://taskmanager-72as.onrender.com/tasks/${taskId}`, {
                     method: "DELETE",
                 });
 
