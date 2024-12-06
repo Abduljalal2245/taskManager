@@ -18,5 +18,14 @@
   "devDependencies": {},
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abduljalal2245/taskManager.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Abduljalal2245/taskManager/issues"
+  },
+  "homepage": "https://github.com/Abduljalal2245/taskManager#readme",
   "description": ""
 }
